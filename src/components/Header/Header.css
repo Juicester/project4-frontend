@@ -1,0 +1,35 @@
+header {
+	background-color: #301014;
+	color: #a2a392;
+	height: 90px;
+}
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 18px;
+}
+#dropdown-basic-button {
+	background-color: #a2a392;
+	border-color: #a2a392;
+	color: black;
+}
+header a {
+	color: black;
+}
+
+.header-logo {
+	height: 50px;
+}
+
+.dropdown-menu {
+	background-color: #f8f4e3;
+}
+
+.dropdown-item {
+	font-size: 20px;
+}
+
+.dropdown-item:hover {
+	background-color: #301014;
+	color: #a2a392;
+}
