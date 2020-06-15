@@ -42,7 +42,7 @@ function App(props) {
 					)}
 				/>
 			</Switch>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }
