@@ -24,6 +24,11 @@ function TeamDetails({ match, location, history }) {
 			<Container>
 				<Row className='row justify-content-center'>
 					<Col className='itemDescription col-md-6 justify-content-center'>
+						<img
+							src='https://res.cloudinary.com/nflleague/image/private/f_auto/league/ucsdijmddsqcj1i9tddd'
+							alt=''
+							srcset=''
+						/>
 						<h3 className='itemTitle'>{team.id}</h3>
 						<h1>{team.team_name}</h1>
 						<p>
