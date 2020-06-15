@@ -9,7 +9,23 @@ class Header extends Component {
 		return (
 			<header>
 				<Navbar className='header-container'>
-					<h1>NFL Analysis</h1>
+					<Link to='/'>
+						<h1>NFL Analysis</h1>
+						<DropdownButton
+							// alignRight
+							id='dropdown-basic-button'
+							title='Analysis Categories'>
+							<Link className='dropdown-item' to={`/teams`}>
+								Teams
+							</Link>
+							<Link className='dropdown-item' to={`/games`}>
+								Games
+							</Link>
+							<Link className='dropdown-item' to={`/analysis/Wins`}>
+								Analysis
+							</Link>
+						</DropdownButton>
+					</Link>
 				</Navbar>
 			</header>
 		);

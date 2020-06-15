@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import './TeamsPage.css';
 
 function TeamsPage() {
-	const url = 'http://localhost:8000/teams';
+	const url = 'https://gentle-peak-20229.herokuapp.com/teams';
 	const [teams, setTeams] = useState([]);
 
 	useEffect(() => {

@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 import './GamesPage.css';
 
 function GamesPage() {
-	const url = 'http://localhost:8000/games/';
+	const url = 'https://gentle-peak-20229.herokuapp.com/games/';
 	const [games, setGames] = useState([]);
 
 	useEffect(() => {

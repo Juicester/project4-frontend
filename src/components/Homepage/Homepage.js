@@ -70,7 +70,7 @@ function Homepage() {
 					</Col>
 					<Col>
 						<Card className='home-cards'>
-							<Link to='/analysis' className='item btn stretched-link'>
+							<Link to='/analysis/wins' className='item btn stretched-link'>
 								<Card.Title>Analysis</Card.Title>
 								<Card.Text>This is where the analysis img would go</Card.Text>
 							</Link>
