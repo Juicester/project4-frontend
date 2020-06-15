@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import './Homepage.css';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function MyModal(props) {
 	return (
@@ -49,6 +51,26 @@ function Homepage() {
 					About this App
 				</Button>
 				<MyModal show={modalShow} onHide={() => setModalShow(false)} />
+				<Row>
+					<Col>
+						<Card className='home-cards'>
+							<Card.Title>Teams</Card.Title>
+							<Card.Text>This is where the team img would go</Card.Text>
+						</Card>
+					</Col>
+					<Col>
+						<Card className='home-cards'>
+							<Card.Title>Games</Card.Title>
+							<Card.Text>This is where the game img would go</Card.Text>
+						</Card>
+					</Col>
+					<Col>
+						<Card className='home-cards'>
+							<Card.Title>Analysis</Card.Title>
+							<Card.Text>This is where the analysis img would go</Card.Text>
+						</Card>
+					</Col>
+				</Row>
 			</div>
 		</Container>
 	);
