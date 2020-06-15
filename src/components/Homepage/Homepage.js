@@ -54,20 +54,26 @@ function Homepage() {
 				<Row>
 					<Col>
 						<Card className='home-cards'>
-							<Card.Title>Teams</Card.Title>
-							<Card.Text>This is where the team img would go</Card.Text>
+							<Link to='/teams' className='item btn stretched-link'>
+								<Card.Title>Teams</Card.Title>
+								<Card.Text>This is where the team img would go</Card.Text>
+							</Link>
 						</Card>
 					</Col>
 					<Col>
 						<Card className='home-cards'>
-							<Card.Title>Games</Card.Title>
-							<Card.Text>This is where the game img would go</Card.Text>
+							<Link to='/games' className='item btn stretched-link'>
+								<Card.Title>Games</Card.Title>
+								<Card.Text>This is where the games img would go</Card.Text>
+							</Link>
 						</Card>
 					</Col>
 					<Col>
 						<Card className='home-cards'>
-							<Card.Title>Analysis</Card.Title>
-							<Card.Text>This is where the analysis img would go</Card.Text>
+							<Link to='/analysis' className='item btn stretched-link'>
+								<Card.Title>Analysis</Card.Title>
+								<Card.Text>This is where the analysis img would go</Card.Text>
+							</Link>
 						</Card>
 					</Col>
 				</Row>

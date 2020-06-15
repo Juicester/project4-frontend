@@ -7,11 +7,11 @@ import Navbar from 'react-bootstrap/Navbar';
 class Header extends Component {
 	render() {
 		return (
-			<div>
+			<header>
 				<Navbar className='header-container'>
 					<h1>NFL Analysis</h1>
 				</Navbar>
-			</div>
+			</header>
 		);
 	}
 }
