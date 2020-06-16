@@ -1,0 +1,39 @@
+.team-page-container {
+	background-color: #086500;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 30px;
+	overflow-y: auto;
+}
+
+.team-title {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 60px;
+	color: white;
+}
+
+.team-card {
+	background-color: #f6f0ed;
+	border: 5px solid #a2a392;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	justify-content: center;
+}
+
+.card-title {
+	text-align: center;
+	font-size: 25px;
+}
+
+.subcategory {
+	font-size: 20px;
+}
+
+.card:hover {
+	box-shadow: 5px 10px 20px 1px black;
+}
