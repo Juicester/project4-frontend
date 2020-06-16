@@ -17,7 +17,7 @@ class Header extends Component {
 					</Navbar.Brand>
 					<h1>NFL Analysis</h1>
 					<DropdownButton
-						// alignRight
+						alignRight
 						id='dropdown-basic-button'
 						title='Shortcuts'>
 						<Link className='dropdown-item' to={`/teams`}>
