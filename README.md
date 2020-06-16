@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NFL Analysis App
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+This is an App for NFL analysis. You can get the info for each NFL team from the prior season. This app also has data on each game from the 2019 season to check spreads and over/unders.
 
-### `yarn start`
+This project was for General Assembly's Software Engineering Immersive.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Repo Links:
+[Frontend Repo](https://github.com/Juicester/project4-frontend)
+[Backend Repo](https://github.com/Juicester/Project-4)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+View the Final Page here: [NFL Analysis](https://nflanalysis.herokuapp.com/)
 
-### `yarn test`
+## Features/User Stories
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories
 
-### `yarn build`
+- _As a user, I want to see a listing of all teams_
+- _As a user, I want to see a listing of all games_
+- _As a user, I want to click on a team and see all the data for the team_
+- _As a user, I want to click on a game and see all the data for the game_
+- _As a user, I want to choose a team stat to see in the analysis page and have it display_
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_**Post Stretch Goal**_
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Silver
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- _As a user, I want to be able to authorize and authenticate their profile_
+- _As a user, I want to choose a game stat to see in the analysis page and have it display_
 
-### `yarn eject`
+Gold
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- _As a user, I want to get historical data on how teams did against the spread and over under_
+- _As a user, I want to see analysis on specific plays_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Issues/Hurdles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- I didn't create full CRUD for the Games, because I was having trouble with the Foreign Keys
+- I didn't use any authentication for the backend
+- Bars sometimes extends beyond the end of the Chart
+- In Games Detail, the team names show up as pathways
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies and Frameworks Used
 
-## Learn More
+- HTML5, CSS, JavaScript, React, React Hooks, React Router, React Bootstrap, Django, Python, Rechart, Pipenv, Django Rest Framework
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Install NFL Analysis:
+1. Fork & clone the repository
+2. Add/enhance features and technologies!
+3. Submit any issues
+```
 
-### Code Splitting
+## Contribute
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This is a group project presented for evaluation for General Assembly and is not open for outside contributions at this time. However, if you have feature suggestions to improve the usability or functionality of the application, feel free to create an Issue on this GitHub repository.
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Issue Tracker Frontend](https://github.com/Juicester/project4-frontend/issues)
+[Issue Tracker Backend](https://github.com/Juicester/Project-4/issues)
