@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -7,6 +7,9 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Teams from '../../images/NFLLogo.png';
+import Games from '../../images/Football.png';
+import Analysis from '../../images/Analysis.png';
 
 function MyModal(props) {
 	return (
@@ -23,9 +26,8 @@ function MyModal(props) {
 				</Modal.Header>
 				<Modal.Body>
 					<p>
-						This is a store for Pathfinder. Pathfinder is a fantasy tabletop
-						role playing game. Search our inventory to see information about
-						items for your characters
+						This is an app for GA. It has a database that has NFL teams, NFL
+						Games and their statistics. Click one of the cards to see!
 					</p>
 				</Modal.Body>
 				<Modal.Footer>
@@ -59,7 +61,7 @@ function Homepage() {
 						<Card className='home-cards'>
 							<Link to='/teams' className='item btn stretched-link'>
 								<Card.Title>Teams</Card.Title>
-								<Card.Text>This is where the team img would go</Card.Text>
+								<Card.Img variant='bottom' src={Teams} />
 							</Link>
 						</Card>
 					</Col>
@@ -67,7 +69,7 @@ function Homepage() {
 						<Card className='home-cards'>
 							<Link to='/games' className='item btn stretched-link'>
 								<Card.Title>Games</Card.Title>
-								<Card.Text>This is where the games img would go</Card.Text>
+								<Card.Img variant='bottom' src={Games} />
 							</Link>
 						</Card>
 					</Col>
@@ -75,7 +77,7 @@ function Homepage() {
 						<Card className='home-cards'>
 							<Link to='/analysis/wins' className='item btn stretched-link'>
 								<Card.Title>Analysis</Card.Title>
-								<Card.Text>This is where the analysis img would go</Card.Text>
+								<Card.Img variant='bottom' src={Analysis} />
 							</Link>
 						</Card>
 					</Col>
