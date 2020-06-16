@@ -1,0 +1,17 @@
+.analysis-page-container {
+	background-color: #086500;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 30px;
+	overflow-y: auto;
+}
+
+.analysis-title {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 60px;
+    color: white;
+}

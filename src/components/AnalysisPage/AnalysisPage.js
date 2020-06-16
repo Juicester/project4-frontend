@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import './AnalysisPage.css';
 import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -34,26 +33,22 @@ function AnalysisPage(props) {
 	}
 
 	return (
-		<div>
-			<h1>Analysis Page</h1>
+		<div className='analysis-page-container'>
+			<h1 className='analysis-title'>Analysis Page</h1>
 			<BarChart
 				layout='vertical'
-				width={750}
-				height={1350}
+				width={950}
+				height={1550}
 				data={teams}
-				margin={{ right: 50, left: 50, top: 30 }}>
+				margin={{ right: 50, left: 80, top: 30, bottom: 40 }}>
 				<CartesianGrid strokeDasharray='3 3' />
 				<XAxis type='number' />
 				<YAxis type='category' dataKey='team_name' />
 				<Tooltip />
 				<Legend />
-				<Bar dataKey={analysisString} fill='#8884d8' />
-				{/* <Bar dataKey='uv' fill='#82ca9d' /> */}
+				<Bar dataKey={analysisString} fill='#000000' />
 			</BarChart>
-			<DropdownButton
-				// alignRight
-				id='dropdown-basic-button'
-				title='Analysis Categories'>
+			<DropdownButton id='dropdown-basic-button' title='Analysis Categories'>
 				<Link className='dropdown-item' to={`/analysis/wins`}>
 					Wins
 				</Link>
