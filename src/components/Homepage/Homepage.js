@@ -50,6 +50,9 @@ function Homepage() {
 					onClick={() => setModalShow(true)}>
 					About this App
 				</Button>
+				<Link className='add-button' to={`/addteam`}>
+					Add a Team
+				</Link>
 				<MyModal show={modalShow} onHide={() => setModalShow(false)} />
 				<Row>
 					<Col>

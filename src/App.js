@@ -9,6 +9,7 @@ import GamesPage from './components/GamesPage/GamesPage';
 import AnalysisPage from './components/AnalysisPage/AnalysisPage';
 import TeamDetails from './components/TeamDetails/TeamDetails';
 import GameDetails from './components/GameDetails/GameDetails';
+import AddTeam from './components/AddTeam/AddTeam';
 
 function App(props) {
 	return (
@@ -120,6 +121,7 @@ function App(props) {
 						/>
 					)}
 				/>
+				<Route path={`/addteam`} exact={true} component={AddTeam} />
 			</Switch>
 			{/* <Footer /> */}
 		</div>
