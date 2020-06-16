@@ -10,6 +10,7 @@ import AnalysisPage from './components/AnalysisPage/AnalysisPage';
 import TeamDetails from './components/TeamDetails/TeamDetails';
 import GameDetails from './components/GameDetails/GameDetails';
 import AddTeam from './components/AddTeam/AddTeam';
+import EditTeam from './components/EditTeam/EditTeam';
 
 function App(props) {
 	return (
@@ -122,6 +123,7 @@ function App(props) {
 					)}
 				/>
 				<Route path={`/addteam`} exact={true} component={AddTeam} />
+				<Route path={`/teams/edit/:id`} exact={true} component={EditTeam} />
 			</Switch>
 			{/* <Footer /> */}
 		</div>

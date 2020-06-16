@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import './TeamDetails.css';
 
 function TeamDetails({ match, location, history }) {
 	const url = 'http://localhost:8000/teams/';
@@ -17,6 +18,16 @@ function TeamDetails({ match, location, history }) {
 			})
 			.catch(console.error);
 	}, [match.params.id]);
+
+	function handleDelete(e) {
+		fetch(`${url}/teams/${match.params.id}`, {
+			method: 'DELETE',
+		})
+			.then(() => {
+				history.push('/');
+			})
+			.catch(console.error);
+	}
 
 	if (!team) return null;
 	return (
@@ -57,6 +68,14 @@ function TeamDetails({ match, location, history }) {
 					</Col>
 				</Row>
 			</Container>
+			<div className='crud-buttons'>
+				<Link className='edit-button' to={`/teams/edit/${match.params.id}`}>
+					Edit Team
+				</Link>
+				<button className='delete-button' onClick={handleDelete}>
+					Delete Team
+				</button>
+			</div>
 		</div>
 	);
 }

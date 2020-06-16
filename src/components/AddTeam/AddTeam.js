@@ -50,7 +50,6 @@ function AddTeam({ match, history }) {
 
 	return (
 		<div className='testing'>
-			<Header />
 			<h1 className='addTitle'>Add A Team</h1>
 			<Form onSubmit={handleSubmit}>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -121,7 +120,7 @@ function AddTeam({ match, history }) {
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
-					<Form.Label>Points Agains</Form.Label>
+					<Form.Label>Points Against</Form.Label>
 					<Form.Control
 						type='text'
 						name='points_against'
@@ -237,7 +236,7 @@ function AddTeam({ match, history }) {
 						className='cat-input'
 					/>
 				</Form.Group>
-				<button type='submit'>Add Item</button>
+				<button type='submit'>Add Team</button>
 			</Form>
 		</div>
 	);
