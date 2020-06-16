@@ -10,7 +10,7 @@
 .add-button:hover {
 	background-color: white;
 	color: #32a501;
-	border-color: black;
+	/* border-color: black; */
 	text-decoration: none;
 }
 

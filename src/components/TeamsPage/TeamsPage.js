@@ -162,7 +162,7 @@ function TeamsPage() {
 
 	return (
 		<div className='team-page-container'>
-			<h1 className='team-title'>Teams Page</h1>
+			<h1 className='team-title'>Teams</h1>
 			<Container className='container-fluid d-flex justify-content-center'>
 				<Row>
 					{teams &&

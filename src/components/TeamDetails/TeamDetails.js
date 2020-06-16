@@ -174,12 +174,7 @@ function TeamDetails({ match, location, history }) {
 			<Container>
 				<Row className='row justify-content-center'>
 					<Col className='itemDescription col-md-6 justify-content-center'>
-						<img
-							className='logo-img'
-							src={imgAdder(team.id)}
-							alt=''
-							srcset=''
-						/>
+						<img className='logo-img' src={imgAdder(team.id)} alt='' />
 						<h3 className='itemTitle'>{team.id}</h3>
 						<h1>{team.team_name}</h1>
 						<p>

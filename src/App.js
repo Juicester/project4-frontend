@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 import Homepage from './components/Homepage/Homepage';
 import TeamsPage from './components/TeamsPage/TeamsPage';
 import GamesPage from './components/GamesPage/GamesPage';

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import './EditTeam.css';
-import Header from '../Header/Header';
 
 function EditTeam({ match, history }) {
-	const url = 'http://localhost:8000/teams';
+	const url = 'https://gentle-peak-20229.herokuapp.com/teams';
 	const [team, setTeam] = useState({
 		team_name: '',
 		conference: '',
@@ -79,7 +78,7 @@ function EditTeam({ match, history }) {
 						name='conference'
 						onChange={handleChange}
 						value={team.conference}
-						className='conf-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -90,7 +89,7 @@ function EditTeam({ match, history }) {
 						name='division'
 						onChange={handleChange}
 						value={team.division}
-						className='div-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -111,7 +110,7 @@ function EditTeam({ match, history }) {
 						name='losses'
 						onChange={handleChange}
 						value={team.losses}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -121,7 +120,7 @@ function EditTeam({ match, history }) {
 						name='ties'
 						onChange={handleChange}
 						value={team.ties}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -131,7 +130,7 @@ function EditTeam({ match, history }) {
 						name='points_for'
 						onChange={handleChange}
 						value={team.points_for}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -141,7 +140,7 @@ function EditTeam({ match, history }) {
 						name='points_against'
 						onChange={handleChange}
 						value={team.points_against}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -151,7 +150,7 @@ function EditTeam({ match, history }) {
 						name='rush_td'
 						onChange={handleChange}
 						value={team.rush_td}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -161,7 +160,7 @@ function EditTeam({ match, history }) {
 						name='pass_td'
 						onChange={handleChange}
 						value={team.pass_td}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -171,7 +170,7 @@ function EditTeam({ match, history }) {
 						name='total_td'
 						onChange={handleChange}
 						value={team.total_td}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -181,7 +180,7 @@ function EditTeam({ match, history }) {
 						name='pass_yards'
 						onChange={handleChange}
 						value={team.pass_yards}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -191,7 +190,7 @@ function EditTeam({ match, history }) {
 						name='rush_yards'
 						onChange={handleChange}
 						value={team.rush_yards}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -201,7 +200,7 @@ function EditTeam({ match, history }) {
 						name='int_for'
 						onChange={handleChange}
 						value={team.int_for}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -211,7 +210,7 @@ function EditTeam({ match, history }) {
 						name='forced_fumbles'
 						onChange={handleChange}
 						value={team.forced_fumbles}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -221,7 +220,7 @@ function EditTeam({ match, history }) {
 						name='fumbles_recovered'
 						onChange={handleChange}
 						value={team.fumbles_recovered}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -231,7 +230,7 @@ function EditTeam({ match, history }) {
 						name='sacks'
 						onChange={handleChange}
 						value={team.sacks}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -241,7 +240,7 @@ function EditTeam({ match, history }) {
 						name='fumble_td'
 						onChange={handleChange}
 						value={team.fumble_td}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -251,7 +250,7 @@ function EditTeam({ match, history }) {
 						name='int_td'
 						onChange={handleChange}
 						value={team.int_td}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -261,10 +260,12 @@ function EditTeam({ match, history }) {
 						name='safeties'
 						onChange={handleChange}
 						value={team.safeties}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
-				<button type='submit'>Edit Team</button>
+				<button className='sub-button' type='submit'>
+					Edit Team
+				</button>
 			</Form>
 		</div>
 	);

@@ -131,7 +131,7 @@ function GamesPage() {
 
 	return (
 		<div className='games-page-container'>
-			<h1 className='games-title'>Games Page</h1>
+			<h1 className='games-title'>Games</h1>
 			<Container className='container-fluid d-flex justify-content-center'>
 				<Row>
 					{games &&

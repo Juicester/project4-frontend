@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
-import Header from '../Header/Header';
 import './AddTeam.css';
 
 function AddTeam({ match, history }) {
-	const url = 'http://localhost:8000/teams';
+	const url = 'https://gentle-peak-20229.herokuapp.com/teams';
 	const [team, setTeam] = useState({
 		team_name: '',
 		conference: '',
@@ -69,7 +68,7 @@ function AddTeam({ match, history }) {
 						placeholder='ex. AFC'
 						name='conference'
 						onChange={handleChange}
-						className='conf-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -79,7 +78,7 @@ function AddTeam({ match, history }) {
 						placeholder='ex. East'
 						name='division'
 						onChange={handleChange}
-						className='div-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -98,7 +97,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='losses'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -107,7 +106,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='ties'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -116,7 +115,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='points_for'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -125,7 +124,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='points_against'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -134,7 +133,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='rush_td'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -143,7 +142,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='pass_td'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -152,7 +151,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='total_td'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -161,7 +160,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='pass_yards'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -170,7 +169,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='rush_yards'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -179,7 +178,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='int_for'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -188,7 +187,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='forced_fumbles'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -197,7 +196,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='fumbles_recovered'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -206,7 +205,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='sacks'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -215,7 +214,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='fumble_td'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -224,7 +223,7 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='int_td'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
 				<Form.Group controlId='exampleForm.ControlInput1'>
@@ -233,10 +232,12 @@ function AddTeam({ match, history }) {
 						type='text'
 						name='safeties'
 						onChange={handleChange}
-						className='cat-input'
+						className='name-input'
 					/>
 				</Form.Group>
-				<button type='submit'>Add Team</button>
+				<button className='sub-button' type='submit'>
+					Add Team
+				</button>
 			</Form>
 		</div>
 	);

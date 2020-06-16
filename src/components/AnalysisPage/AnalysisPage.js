@@ -5,13 +5,13 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import {
 	BarChart,
 	Bar,
-	Cell,
+	// Cell,
 	XAxis,
 	YAxis,
 	CartesianGrid,
 	Tooltip,
 	Legend,
-	Label,
+	// Label,
 } from 'recharts';
 
 function AnalysisPage(props) {
@@ -34,7 +34,7 @@ function AnalysisPage(props) {
 
 	return (
 		<div className='analysis-page-container'>
-			<h1 className='analysis-title'>Analysis Page</h1>
+			<h1 className='analysis-title'>Analysis</h1>
 			<BarChart
 				layout='vertical'
 				width={950}
